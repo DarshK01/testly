@@ -1,0 +1,37 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: testly-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testly
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:darshani}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      # Use "update" for dev. Switch to "validate" + Flyway/Liquibase migrations for production.
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 3MB
+
+app:
+  jwt:
+    # Override via env var in production. Must be a long, random secret (>= 256 bits for HS256).
+    secret: ${JWT_SECRET:change-this-super-secret-key-before-deploying-testly-app-min-32-bytes}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24 hours
+  upload:
+    dir: ${UPLOAD_DIR:uploads}
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:5173}
