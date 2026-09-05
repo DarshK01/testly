@@ -12,55 +12,55 @@ sent to the student until after they submit.
 
 ### 1. User Registration & Role Selection
 Users choose their primary role (**Teacher** or **Student**) at signup, which dynamically tailors their dashboard view and application permissions.
-![Register Page](screenshots/1.png)
+![Register Page](./screenshots/1.png)
 
 ### 2. Teacher Dashboard (First Login)
 Clean initial empty state for educators prior to creating classrooms or publishing test modules.
-![Teacher Dashboard Empty State](screenshots/4.png)
+![Teacher Dashboard Empty State](./screenshots/4.png)
 
 ### 3. Classroom Management & Join Codes
 Teachers can organize students into dedicated classrooms, each auto-generating a unique short join code for student enrollment.
-![Classrooms with Join Codes](screenshots/2.png)
+![Classrooms with Join Codes](./screenshots/2.png)
 
 ### 4. Classroom-Restricted Test Assignment
 Tests can be targeted to a specific classroom or marked as **Open to every student** for maximum flexibility.
-![Assigning Test to Classroom](screenshots/8.png)
+![Assigning Test to Classroom](./screenshots/8.png)
 
 ### 5. Text-Based Question Authoring
 Intuitive question creator supporting rich text, multiple-choice options, and instant answer key designation.
-![Managing Text-Based Questions](screenshots/6.png)
+![Managing Text-Based Questions](./screenshots/6.png)
 
 ### 6. Image Questions & Hidden Topic Tags
 Questions support image attachments alongside custom topic tags. Tags remain hidden from students during the test attempt and are revealed only post-submission.
-![Managing Image Questions with Tags](screenshots/9.png)
+![Managing Image Questions with Tags](./screenshots/9.png)
 
 ### 7. Student Dashboard (Pre-Enrollment)
 A clean student view prior to joining a classroom; only open-access tests are listed until a classroom join code is entered.
-![Student Dashboard Before Joining](screenshots/3.png)
+![Student Dashboard Before Joining](./screenshots/3.png)
 
 ### 8. Student Dashboard (Post-Enrollment)
 After entering a join code, classroom-specific tests automatically populate on the student's active test feed.
-![Student Dashboard After Joining](screenshots/7.png)
+![Student Dashboard After Joining](./screenshots/7.png)
 
 ### 9. Timed Test Attempt Interface
 Distraction-free assessment screen featuring a live countdown timer with autosaving responses as students make selections.
-![Taking a Test with Timer](screenshots/11.png)
+![Taking a Test with Timer](./screenshots/11.png)
 
 ### 10. Instant Answer Review & Results
 Post-submission view highlighting correct and incorrect selections only after the assessment is submitted.
-![Result Page Answer Review](screenshots/12.png)
+![Result Page Answer Review](./screenshots/12.png)
 
 ### 11. Topic-Wise Analytics & Performance Breakdown
 End-to-end proof of the tagging system: topic tags (e.g., *"division and classes"*, *"seed"*) remain hidden during the test and are aggregated here to provide detailed performance insights.
-![Topic-Wise Performance Breakdown](screenshots/14.png)
+![Topic-Wise Performance Breakdown](./screenshots/14.png)
 
 ### 12. Teacher Test Overview
 Comprehensive administrative view displaying test availability, question counts, and assigned classroom scopes.
-![Teacher List of Tests](screenshots/tests.png)
+![Teacher List of Tests](./screenshots/tests.png)
 
 ### 13. Per-Student Result Auditing
 Teachers can inspect detailed individual submission scores, timestamps, and answer breakdowns for any given test.
-![Teacher Viewing Student Result](screenshots/16.png)
+![Teacher Viewing Student Result](./screenshots/16.png)
 ---
 
 ## Features
