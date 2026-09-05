@@ -8,119 +8,59 @@ sent to the student until after they submit.
 **Stack:** Spring Boot 3 (Java 17) · React 18 (Vite) · PostgreSQL
 
 ---
+## 📸 Demo & Screenshots
 
-## Screenshots
+### 1. User Registration & Role Selection
+Users choose their primary role (**Teacher** or **Student**) at signup, which dynamically tailors their dashboard view and application permissions.
+![Register Page](screenshots/1.png)
 
-<table>
-<tr>
-<td width="50%">
+### 2. Teacher Dashboard (First Login)
+Clean initial empty state for educators prior to creating classrooms or publishing test modules.
+![Teacher Dashboard Empty State](screenshots/4.png)
 
-**Register**
-<br/>Pick a role — Teacher or Student — at signup.
-<br/><img src="screenshots/1.png" alt="Register page" width="100%"/>
+### 3. Classroom Management & Join Codes
+Teachers can organize students into dedicated classrooms, each auto-generating a unique short join code for student enrollment.
+![Classrooms with Join Codes](screenshots/2.png)
 
-</td>
-<td width="50%">
+### 4. Classroom-Restricted Test Assignment
+Tests can be targeted to a specific classroom or marked as **Open to every student** for maximum flexibility.
+![Assigning Test to Classroom](screenshots/8.png)
 
-**Teacher dashboard (first login)**
-<br/>Empty state before any tests exist.
-<br/><img src="screenshots/4.png" alt="Teacher dashboard empty state" width="100%"/>
+### 5. Text-Based Question Authoring
+Intuitive question creator supporting rich text, multiple-choice options, and instant answer key designation.
+![Managing Text-Based Questions](screenshots/6.png)
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### 6. Image Questions & Hidden Topic Tags
+Questions support image attachments alongside custom topic tags. Tags remain hidden from students during the test attempt and are revealed only post-submission.
+![Managing Image Questions with Tags](screenshots/9.png)
 
-**Classrooms with join codes**
-<br/>Each classroom gets a short code students use to join.
-<br/><img src="screenshots/2.png" alt="Teacher classrooms with join codes" width="100%"/>
+### 7. Student Dashboard (Pre-Enrollment)
+A clean student view prior to joining a classroom; only open-access tests are listed until a classroom join code is entered.
+![Student Dashboard Before Joining](screenshots/3.png)
 
-</td>
-<td width="50%">
+### 8. Student Dashboard (Post-Enrollment)
+After entering a join code, classroom-specific tests automatically populate on the student's active test feed.
+![Student Dashboard After Joining](screenshots/7.png)
 
-**Restricting a test to a classroom**
-<br/>Optional — leave as "Open to every student" to keep old behavior.
-<br/><img src="screenshots/8.png" alt="Assigning a test to a classroom" width="100%"/>
+### 9. Timed Test Attempt Interface
+Distraction-free assessment screen featuring a live countdown timer with autosaving responses as students make selections.
+![Taking a Test with Timer](screenshots/11.png)
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### 10. Instant Answer Review & Results
+Post-submission view highlighting correct and incorrect selections only after the assessment is submitted.
+![Result Page Answer Review](screenshots/12.png)
 
-**Managing questions — text-based**
-<br/>Add options, mark the correct one, no tags required.
-<br/><img src="screenshots/6.png" alt="Managing text-based questions" width="100%"/>
+### 11. Topic-Wise Analytics & Performance Breakdown
+End-to-end proof of the tagging system: topic tags (e.g., *"division and classes"*, *"seed"*) remain hidden during the test and are aggregated here to provide detailed performance insights.
+![Topic-Wise Performance Breakdown](screenshots/14.png)
 
-</td>
-<td width="50%">
+### 12. Teacher Test Overview
+Comprehensive administrative view displaying test availability, question counts, and assigned classroom scopes.
+![Teacher List of Tests](screenshots/tests.png)
 
-**Managing questions — image-based + tags**
-<br/>Questions can be an image, with optional topic tags (hidden from students until after they submit).
-<br/><img src="screenshots/9.png" alt="Managing image-based questions with tags" width="100%"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**Student — before joining a classroom**
-<br/>Nothing shows up until a join code is entered (or a test is open to everyone).
-<br/><img src="screenshots/3.png" alt="Student dashboard before joining a classroom" width="100%"/>
-
-</td>
-<td width="50%">
-
-**Student — after joining**
-<br/>Classroom-restricted tests appear once the student has joined.
-<br/><img src="screenshots/7.png" alt="Student dashboard after joining a classroom" width="100%"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**Taking a test**
-<br/>Countdown timer top-right; answers autosave as options are selected.
-<br/><img src="screenshots/11.png" alt="Taking a test with a live timer" width="100%"/>
-
-</td>
-<td width="50%">
-
-**Result — score & review**
-<br/>Correct/incorrect coloring appears only after submission.
-<br/><img src="screenshots/12.png" alt="Result page showing score and answer review" width="100%"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%" colspan="2">
-
-**Result — topic-wise performance breakdown**
-<br/>This is the screenshot that proves the tagging feature end-to-end: tags (e.g. "division and classes", "seed") were completely invisible during the attempt, and only appear here, in the post-submit result, aggregated per topic.
-<br/><img src="screenshots/14.png" alt="Result page with topic-wise score breakdown" width="70%"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-**Teacher's test list**
-<br/>Each test shows its classroom restriction (or "open to everyone"), question count, and status.
-<br/><img src="screenshots/tests.png" alt="Teacher's list of tests with classroom labels" width="100%"/>
-
-</td>
-<td width="50%">
-
-**Teacher viewing a student's result**
-<br/>Per-student score and submission timestamp for a given test.
-<br/><img src="screenshots/16.png" alt="Teacher viewing a student's result" width="100%"/>
-
-</td>
-</tr>
-</table>
-
-<sub>Additional screenshots not shown above: `5.png`, `10.png`, `13.png`, `15.png` — same flows for a second demo student/classroom.</sub>
-
+### 13. Per-Student Result Auditing
+Teachers can inspect detailed individual submission scores, timestamps, and answer breakdowns for any given test.
+![Teacher Viewing Student Result](screenshots/16.png)
 ---
 
 ## Features
